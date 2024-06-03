@@ -1,0 +1,13 @@
+.vivelapi{
+    height: 50px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+}
+.butinfo{
+    width: 100px;
+    margin-left: 30px;
+}
+.divinfo{
+    height: 50vh;
+}
