@@ -7,13 +7,24 @@ let constrac = (id,url,arr)=> {
     //console.log(needurl)
 let divinfo1=document.createElement('div')
         divinfo1.classList.add('divinfo')
-        divinfo1.textContent=JSON.stringify(arr[id-1])
+    let divpuser= document.createElement('div')
+    divpuser.classList.add('divpuser')
+    let puser=document.createElement('p')
+    puser.textContent=JSON.stringify(arr[id-1])
         document.body.appendChild(divinfo1)
+    divpuser.appendChild(puser)
+
+    let divbutuser = document.createElement('div')
+    divbutuser.classList.add('divbutuser')
         let butpost1=document.createElement('button')
+    butpost1.classList.add('butpostzag')
         butpost1.textContent='Post of current user'
-        divinfo1.appendChild(butpost1)
-        butpost1.addEventListener("click",() => {
+        divinfo1.appendChild(divbutuser)
+    divbutuser.appendChild(butpost1)
+    divinfo1.append(divpuser,divbutuser)
+    butpost1.addEventListener("click",() => {
             let divpost1 = document.createElement('div')
+        divpost1.classList.add('divpost1')
             fetch(needurl)
                 .then((value) => value.json())
                 .then((info) => {
@@ -32,6 +43,7 @@ let divinfo1=document.createElement('div')
                                     butinfopost1.addEventListener("click",() => {
                                         window.location.href = "post-details.html";
                                         localStorage.setItem('idtitlpost',butinfopost1.id)
+                                        localStorage.setItem('idcom', infoElement.id)
                                     })
                         divpost1.appendChild(divdiv1)
                         console.log(infoElement)

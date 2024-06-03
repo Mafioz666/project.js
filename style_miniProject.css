@@ -1,13 +1,85 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.divosnconstructorapi{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 .vivelapi{
-    height: 50px;
-    width: 250px;
+    height: 70px;
+    border: 2px solid rebeccapurple;
+    background: rgba(139, 0, 139, 0.42);
+    margin: 15px;
+    width: 45%;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 }
 .butinfo{
     width: 100px;
-    margin-left: 30px;
+background: pink;
 }
 .divinfo{
-    height: 50vh;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.butpostzag{
+    margin-top: 2vh;
+    width: 100%;
+    height: 40px;
+    background: floralwhite;
+}
+.divpuser{
+    width: 100vw;
+    background: pink;
+}
+.divbutuser{
+    width: 90vw;
+}
+.divdiv{
+    height: 70px;
+    width: 45%;
+    margin: 5px;
+    border: 2px solid;
+    background: rgba(128, 128, 128, 0.61);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.divpost1{
+    margin-top: 20px;
+    display: flex;
+    height: 450px;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.butinfopost{
+    width: 50%;
+    background: rgba(0, 0, 0, 0.84);
+    color: white;
+}
+.divinfopost{
+    background: khaki;
+    margin: 20px;
+    font-size: 18px;
+}
+.divcominform{
+    background: rgba(64, 255, 0, 0.32);
+    border: 2px solid green;
+    height: 100px;
+    margin: 10px;
+    width: 48%;
+    padding: 5px;
+}
+.divcom{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 550px;
 }
